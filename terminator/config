@@ -1,0 +1,106 @@
+[global_config]
+  title_transmit_bg_color = "#7e628e"
+  tab_position = left
+  borderless = True
+[keybindings]
+  cycle_prev = <Alt>bracketleft
+  switch_to_tab_10 = <Alt>0
+  go_right = None
+  split_vert = <Alt>d
+  switch_to_tab_6 = <Alt>6
+  switch_to_tab_7 = <Alt>7
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  cycle_next = <Alt>bracketright
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_8 = <Alt>8
+  switch_to_tab_9 = <Alt>9
+  go_prev = None
+  close_term = <Alt>w
+  go_left = None
+  hide_window = None
+  go_up = None
+  split_horiz = <Shift><Alt>d
+  go_down = None
+  go_next = None
+[profiles]
+  [[Argonaut]]
+    palette = "#232323:#ff000f:#8ce10b:#ffb900:#008df8:#6d43a6:#00d8eb:#ffffff:#444444:#ff2740:#abe15b:#ffd242:#0092ff:#9a5feb:#67fff0:#ffffff"
+    background_color = "#0e1019"
+    background_image = None
+    cursor_color = "#ff0018"
+    foreground_color = "#fffaf4"
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#022026:#b2302d:#00a941:#59819c:#459a86:#00599d:#5d7e19:#405555:#384451:#ff4242:#2aea5e:#8ed4fd:#61d5ba:#1298ff:#98d028:#58fbd6"
+    background_image = None
+    cursor_color = "#4afcd6"
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    background_color = "#011116"
+  [[ForestBlue]]
+    palette = "#333333:#f8818e:#92d3a2:#1a8e63:#8ed0ce:#5e468c:#31658c:#e2d8cd:#3d3d3d:#fb3d66:#6bb48d:#30c85a:#39a7a2:#7e62b3:#6096bf:#e2d8cd"
+    background_image = None
+    cursor_color = "#9e9ecb"
+    foreground_color = "#e2d8cd"
+    show_titlebar = False
+    background_color = "#051519"
+  [[Atom]]
+    palette = "#000000:#fd5ff1:#87c38a:#ffd7b1:#85befd:#b9b6fc:#85befd:#e0e0e0:#000000:#fd5ff1:#94fa36:#f5ffa8:#96cbfe:#b9b6fc:#85befd:#e0e0e0"
+    background_color = "#161719"
+    background_image = None
+    cursor_color = "#d0d0d0"
+    foreground_color = "#c5c8c6"
+  [[Treehouse]]
+    palette = "#321300:#b2270e:#44a900:#aa820c:#58859a:#97363d:#b25a1e:#786b53:#433626:#ed5d20:#55f238:#f2b732:#85cfed:#e14c5a:#f07d14:#ffc800"
+    background_color = "#191919"
+    background_image = None
+    cursor_color = "#fac814"
+    foreground_color = "#786b53"
+  [[Shaman]]
+    palette = "#012026:#b2302d:#00a941:#5e8baa:#449a86:#00599d:#5d7e19:#405555:#384451:#ff4242:#2aea5e:#8ed4fd:#61d5ba:#1298ff:#98d028:#58fbd6"
+    background_color = "#001015"
+    background_image = None
+    cursor_color = "#4afcd6"
+    foreground_color = "#405555"
+  [[Afterglow]]
+    palette = "#151515:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#d0d0d0:#505050:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#f5f5f5"
+    background_color = "#212121"
+    background_image = None
+    cursor_color = "#d0d0d0"
+    foreground_color = "#d0d0d0"
+  [[Bright Lights]]
+    palette = "#191919:#ff355b:#b7e876:#ffc251:#76d4ff:#ba76e7:#6cbfb5:#c2c8d7:#191919:#ff355b:#b7e876:#ffc251:#76d5ff:#ba76e7:#6cbfb5:#c2c8d7"
+    background_color = "#191919"
+    background_image = None
+    cursor_color = "#f34b00"
+    foreground_color = "#b3c9d7"
+  [[Ubuntu]]
+    background_image = None
+    background_color = "#300a24"
+    cursor_color = "#bbbbbb"
+    foreground_color = "#eeeeec"
+  [[Elementary]]
+    palette = "#242424:#d71c15:#5aa513:#fdb40c:#063b8c:#e40038:#2595e1:#efefef:#4b4b4b:#fc1c18:#6bc219:#fec80e:#0955ff:#fb0050:#3ea8fc:#8c00ec"
+    background_color = "#181818"
+    background_image = None
+    cursor_color = "#bbbbbb"
+    foreground_color = "#efefef"
+  [[Urple]]
+    palette = "#000000:#b0425b:#37a415:#ad5c42:#564d9b:#6c3ca1:#808080:#87799c:#5d3225:#ff6388:#29e620:#f08161:#867aed:#a05eee:#eaeaea:#bfa3ff"
+    background_color = "#1b1b23"
+    background_image = None
+    cursor_color = "#a063eb"
+    foreground_color = "#877a9b"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
