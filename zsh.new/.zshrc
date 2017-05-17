@@ -123,8 +123,11 @@ freewifi()
 	ping $gw
 }
 
+#add .script to PATH
+export PATH="$PATH:/home/bart/.script"
+
 # Shell integration for iterm
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Load Homebrew config script
-source $HOME/.brewconfig.zsh
+# bindkey to make ctrl-u work as exepted
+bindkey \^U backward-kill-line
