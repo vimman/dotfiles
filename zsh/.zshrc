@@ -129,4 +129,7 @@ freewifi()
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Load Homebrew config script
-source $HOME/.brewconfig.zsh
+if [ -e $HOME/.brewconfig.zsh ]
+then
+	source $HOME/.brewconfig.zsh
+fi
