@@ -11,6 +11,7 @@ Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'maksimr/vim-translator'
 Plug 'chrisbra/Recover.vim'
+Plug 'ekalinin/Dockerfile.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -71,7 +72,7 @@ imap <right> <nop>
 " Fonction pour passer la numérotation en mode relative "
 function! NumberToggle()
 	if(&relativenumber == 1)
-		set norelativenumber
+		set number
 	else
 		set relativenumber
 	endif

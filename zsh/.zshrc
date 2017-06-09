@@ -85,6 +85,10 @@ alias gcc="gcc -Wall -Werror -Wextra"
 
 alias v="nvim"
 
+alias vin="nvim"
+
+alias vi="nvim"
+
 # Color man pages
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
