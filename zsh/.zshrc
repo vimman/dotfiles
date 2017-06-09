@@ -129,6 +129,9 @@ freewifi()
 	ping $gw
 }
 
+# make ctrl-u act as usual
+bindkey \^U backward-kill-line
+
 # Shell integration for iterm
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
