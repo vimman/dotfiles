@@ -72,6 +72,7 @@ imap <right> <nop>
 " Fonction pour passer la numérotation en mode relative "
 function! NumberToggle()
 	if(&relativenumber == 1)
+		set norelativenumber
 		set number
 	else
 		set relativenumber
@@ -119,10 +120,10 @@ let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 
 " Enable the list of buffers
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 
 " Show just the filename
-let g:airline#extensions#tabline#fnamemod = ':t'
+" let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Fait marcher le copier-coller ( vim compilé avec +clipboard )
 " set clipboard=unnamed

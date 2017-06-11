@@ -39022,6 +39022,8 @@
 	<true/>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1319 780 796 473 0 0 3200 1800 </string>
+	<key>NSWindow Frame iTerm Window 0</key>
+	<string>754 923 585 452 0 0 3200 1777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -39700,6 +39702,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/qdurot/dotfiles/iterm</string>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<false/>
 	<key>SUFeedAlternateAppNameKey</key>
