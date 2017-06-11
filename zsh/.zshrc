@@ -129,6 +129,9 @@ freewifi()
 	ping $gw
 }
 
+# add .script to path
+export PATH="$PATH:$HOME/.script"
+
 # make ctrl-u act as usual
 bindkey \^U backward-kill-line
 
