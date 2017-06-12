@@ -39023,7 +39023,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1319 780 796 473 0 0 3200 1800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>754 923 585 452 0 0 3200 1777 </string>
+	<string>1727 897 585 452 0 0 3200 1777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -39665,6 +39665,8 @@
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>518715831.25001901</real>
 	<key>PointerActions</key>
@@ -39716,6 +39718,10 @@
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
 	<string>3.0.15</string>
 </dict>
