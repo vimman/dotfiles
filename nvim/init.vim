@@ -26,7 +26,7 @@ set number			" Affiche le numero de ligne
 set ruler			" Affiche la position actuelle du curseur
 set wrap			" Affiche les lignes trop longues sur plusieur lignes
 set linebreak		" Ne coupe pas les mots
-set scrolloff=20	" Affiche un minimum de 20 lignes autour du curseur
+set scrolloff=10	" Affiche un minimum de 10 lignes autour du curseur
 set shiftwidth=4	" Regle les tabulations automatiques sur 4 espaces
 set tabstop=4		" Regle l'affichage des tabulations sur 4 espaces
 set background=dark	" Utilise des couleurs adaptees pour fond noir
@@ -126,5 +126,19 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " Fait marcher le copier-coller ( vim compilé avec +clipboard )
 " set clipboard=unnamed
 
+" utiliser escape pour sortir du mode insert du terminal
+:tnoremap <Esc> <C-\><C-n>
 
-" Configuration de vim translate
+" Utiliser Alt-[hjkl] pour se déplacer dans les splits
+:tnoremap <A-h> <C-\><C-N><C-w>h
+:tnoremap <A-j> <C-\><C-N><C-w>j
+:tnoremap <A-k> <C-\><C-N><C-w>k
+:tnoremap <A-l> <C-\><C-N><C-w>l
+:inoremap <A-h> <C-\><C-N><C-w>h
+:inoremap <A-j> <C-\><C-N><C-w>j
+:inoremap <A-k> <C-\><C-N><C-w>k
+:inoremap <A-l> <C-\><C-N><C-w>l
+:nnoremap <A-h> <C-w>h
+:nnoremap <A-j> <C-w>j
+:nnoremap <A-k> <C-w>k
+:nnoremap <A-l> <C-w>l
