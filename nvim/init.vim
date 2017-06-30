@@ -41,12 +41,15 @@ set cursorline
 hi ColorColumn ctermbg=darkgrey
 hi Folded ctermbg=NONE "set the folds to not be backgrounded 
 
+" set invisisble split separators
+hi VertSplit ctermfg=black
+set fillchars=""
+
 "-------------------------------- RECHERCHE ----------------------------------
 
 set ignorecase		" Ignore la casse lors d'une recherche
 set smartcase		" Sauf si la recherche contient une majuscule
 set incsearch		" Surligne le resultat pendant la saisie
-set hlsearch		" Surligne le resultat de la recherche
 
 "---------------------------------- Beep -------------------------------------
 
