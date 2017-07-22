@@ -143,3 +143,5 @@ if [ -e $HOME/.brewconfig.zsh ]
 then
 	source $HOME/.brewconfig.zsh
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
