@@ -102,20 +102,26 @@ man() {
 
 freewifi()
 {
+	source .freepass
 	gw=$(ip r |grep default |awk '{print $3}')
-	if ! ping -c 1 -w 1 $gw >/dev/null 2>&1; then
+	if ! (ping -c 1 -w 1 $gw >/dev/null 2>&1) && [[ `uname` == Linux ]]
+	then
 		nmcli c down FreeWifi 
-		sleep 3s
 		nmcli c up FreeWifi
+	elif ! (ping -c 1 -w 1 $gw >/dev/null 2>&1) && [[ `uname` == Darwin ]]
+	then
+		networksetup -setairportpower en1 off
+		networksetup -setairportpower en1 on
+	else
+		echo "I don't reconize your system"
 	fi
-	
 	while ! ping -c 1 -w 1 $gw >/dev/null 2>&1; do
 		gw=$(ip r |grep default |awk '{print $3}')
 	done
 	
 	i=0
 	while ! ping -c 1 -w 1 google.fr >/dev/null 2>&1; do
-		curl -d 'login=3199902338&password=Salut tout le monde' https://wifi.free.fr/Auth >/dev/null 2>&1
+		curl -d 'login=$FREE_LOGIN&password=$FREE_PASS' https://wifi.free.fr/Auth >/dev/null 2>&1
 		i=$((i+1))
 		echo -ne "\x1b\x5b80D>> Not connected, retrying | tried \x1b[31m$i\x1b[00m times"
 	done
