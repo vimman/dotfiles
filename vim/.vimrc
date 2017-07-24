@@ -12,6 +12,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'maksimr/vim-translator'
 Plug 'chrisbra/Recover.vim'
 Plug 'ekalinin/Dockerfile.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " Initialize plugin system
 call plug#end()
@@ -124,13 +125,28 @@ let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 
 " Enable the list of buffers
-" let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " Show just the filename
-" let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#fnamemod = ':t'
 
-" Fait marcher le copier-coller ( vim compilé avec +clipboard )
-" set clipboard=unnamed
+" utiliser escape pour sortir du mode insert du terminal dans nvim
+if has('nvim')
+	:tnoremap <Esc> <C-\><C-n>
+endif
 
-
-" Configuration de vim translate
+" Utiliser Alt-[hjkl] pour se déplacer dans les splits
+if has('nvim')
+	:tnoremap <A-h> <C-\><C-N><C-w>h
+	:tnoremap <A-j> <C-\><C-N><C-w>j
+	:tnoremap <A-k> <C-\><C-N><C-w>k
+	:tnoremap <A-l> <C-\><C-N><C-w>l
+endif
+:inoremap <A-h> <C-\><C-N><C-w>h
+:inoremap <A-j> <C-\><C-N><C-w>j
+:inoremap <A-k> <C-\><C-N><C-w>k
+:inoremap <A-l> <C-\><C-N><C-w>l
+:nnoremap <A-h> <C-w>h
+:nnoremap <A-j> <C-w>j
+:nnoremap <A-k> <C-w>k
+:nnoremap <A-l> <C-w>l

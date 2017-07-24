@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export FREE_LOGIN='put_your_login_here'
+export FREE_PASS='put_your_password_here'
