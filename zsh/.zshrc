@@ -89,6 +89,8 @@ alias vin="nvim"
 
 alias vi="nvim"
 
+alias :q="exit"
+
 # Color man pages
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
