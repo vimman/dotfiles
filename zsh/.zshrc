@@ -103,7 +103,7 @@ man() {
 # Connection to FreeWifi hotspot
 freewifi()
 {
-	source .freepass
+	source ~/dotfiles/.freepass
 	gw=$(ip r |grep default |awk '{print $3}')
 	if ! (ping -c 1 -w 1 $gw >/dev/null 2>&1) && [[ `uname` == Linux ]]
 	then
@@ -113,8 +113,11 @@ freewifi()
 	then
 		networksetup -setairportpower en1 off
 		networksetup -setairportpower en1 on
+	elif ! (ping -c 1 -w 1 $gw >/dev/null 2>&1)
+	then
+		echo "connection troubles"
 	else
-		echo "I don't reconize your system"
+		echo "connection is ok"
 	fi
 	while ! ping -c 1 -w 1 $gw >/dev/null 2>&1; do
 		gw=$(ip r |grep default |awk '{print $3}')
