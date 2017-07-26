@@ -5,14 +5,13 @@
 "------------------------------- VIM-PLUG ------------------------------------
 call plug#begin()
 
-Plug 'vim-syntastic/syntastic'
-Plug 'tpope/vim-surround'
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'maksimr/vim-translator'
-Plug 'chrisbra/Recover.vim'
-Plug 'ekalinin/Dockerfile.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'vim-syntastic/syntastic'			"Avoid simple mistakes of syntax
+Plug 'tpope/vim-surround'				"Plugin to help surrounding (){}[]...
+Plug 'bling/vim-airline'				"Bottom line styling plugin
+Plug 'vim-airline/vim-airline-themes'	"Themes for vim-airline
+Plug 'chrisbra/Recover.vim'				"recover .swp files
+Plug 'ekalinin/Dockerfile.vim'			"syntax for Dockerfiles
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } "FZF !
 
 " Initialize plugin system
 call plug#end()
@@ -28,15 +27,17 @@ set number			" Affiche le numero de ligne
 set ruler			" Affiche la position actuelle du curseur
 set wrap			" Affiche les lignes trop longues sur plusieur lignes
 set linebreak		" Ne coupe pas les mots
-set scrolloff=20	" Affiche un minimum de 20 lignes autour du curseur
+set scrolloff=5		" Affiche un minimum de 5 lignes autour du curseur
 set shiftwidth=4	" Regle les tabulations automatiques sur 4 espaces
 set tabstop=4		" Regle l'affichage des tabulations sur 4 espaces
 set background=dark	" Utilise des couleurs adaptees pour fond noir
+
 set laststatus=2	" Affiche la bar de status
 set cc=80			" Change la couleur de fond a 80 colonnes
 set showcmd			" Affiche les commandes incompletes
 					" set list set nolist nice caracteres
-" set listchars=space:.,tab:▸\ ,eol:¬	
+					"
+set listchars=space:.,tab:▸\ ,eol:¬	
 set cursorline
 " set cursorcolumn
 
