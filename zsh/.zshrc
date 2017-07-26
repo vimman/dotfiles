@@ -89,6 +89,8 @@ alias vin="nvim"
 
 alias vi="nvim"
 
+alias :q="exit"
+
 # Color man pages
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
@@ -100,6 +102,7 @@ man() {
     command man "$@"
 }
 
+# Connection to FreeWifi hotspot
 freewifi()
 {
 	source ~/dotfiles/.freepass
@@ -137,6 +140,8 @@ freewifi()
 	
 	ping $gw
 }
+
+export VISUAL="vim"
 
 # add .script to path
 export PATH="$PATH:$HOME/.script"
