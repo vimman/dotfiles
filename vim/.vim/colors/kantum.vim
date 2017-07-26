@@ -5,5 +5,5 @@ if exists("syntax on")
 endif
 let g:colors_name="kantum"
 
-" cterm colors
-" gui colors
+" Errors less agressive
+highlight ErrorMsg ctermfg=1 ctermbg=0 guifg=Black guibg=Red
