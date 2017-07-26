@@ -74,30 +74,11 @@ imap <right> <nop>
 
 "------------------------------- FUNCTIONS -----------------------------------
 
-" Fonction pour passer la numérotation en mode relative "
-function! NumberToggle()
-	if(&relativenumber == 1)
-		set norelativenumber
-		set number
-	else
-		set relativenumber
-	endif
-endfunc
+" Raccourci pour passer la numérotation en mode relative "
+nnoremap <C-n> :set relativenumber!<cr>
 
-" Raccourci permettant d'utiliser la fonction
-nnoremap <C-n> :call NumberToggle()<cr>
-
-" fonction pour pouvoir coller du code sans problemes
-function! IndentToggle()
-	if(&paste ==1)
-		set nopaste
-	else
-		set paste
-	endif
-endfunc
-
-" Raccourci clavier pour utiliser la fontion
-nnoremap <C-l> :call IndentToggle() <cr>
+" Raccourci clavier pour pouvoir coller du code sans problemes
+nnoremap <C-l> :set paste! <cr>
 
 " from 90% without plugins
 "set path+=** " not so good idea !
@@ -150,3 +131,7 @@ endif
 :nnoremap <A-j> <C-w>j
 :nnoremap <A-k> <C-w>k
 :nnoremap <A-l> <C-w>l
+
+"------------------------------ VIMSCRIPT -------------------------------------
+
+autocmd VimEnter * echo "'O.O' Ah que coucou !"

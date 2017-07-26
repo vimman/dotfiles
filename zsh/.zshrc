@@ -124,7 +124,7 @@ freewifi()
 	
 	i=0
 	while ! ping -c 1 -w 1 google.fr >/dev/null 2>&1; do
-		curl -d 'login=$FREE_LOGIN&password=$FREE_PASS' https://wifi.free.fr/Auth >/dev/null 2>&1
+		curl -d "login=$FREE_LOGIN&password=$FREE_PASS" https://wifi.free.fr/Auth >/dev/null 2>&1
 		i=$((i+1))
 		echo -ne "\x1b\x5b80D>> Not connected, retrying | tried \x1b[31m$i\x1b[00m times"
 	done
