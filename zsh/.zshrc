@@ -89,6 +89,8 @@ alias vin="nvim"
 
 alias vi="nvim"
 
+alias vim="nvim"
+
 alias :q="exit"
 
 # Color man pages

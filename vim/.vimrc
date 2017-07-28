@@ -12,6 +12,7 @@ Plug 'vim-airline/vim-airline-themes'	"Themes for vim-airline
 Plug 'chrisbra/Recover.vim'				"recover .swp files
 Plug 'ekalinin/Dockerfile.vim'			"syntax for Dockerfiles
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } "FZF !
+Plug 'tpope/vim-fugitive'				"git plugin
 
 " Initialize plugin system
 call plug#end()
