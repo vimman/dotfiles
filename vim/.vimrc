@@ -65,14 +65,14 @@ set noerrorbells	" Empeche vim de beeper
 set hidden
 
 " Desactive les touches directionnelles
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 
 "------------------------------- FUNCTIONS -----------------------------------
 
@@ -162,4 +162,20 @@ endif
 
 "------------------------------ VIMSCRIPT -------------------------------------
 
+" Use space as <mapleader> key
+:let mapleader = " "
+
+" Use \\ as <localleader>
+:let  MAPLOCALLEADER = "\\"
+
+" Let Vim say something nice at startup
 autocmd VimEnter * echo "'O.O' Ah que coucou !"
+
+" Map ctrl-u to set the current word Uppercase
+:imap <c-u> <esc>viw~ea
+
+" Use a shorcut to edit my vimrc
+:nnoremap <leader>ev :sp $MYVIMRC<cr>G
+
+" Use a shorcut to source my vimrc
+:nnoremap <leader>sv :so $MYVIMRC<cr>

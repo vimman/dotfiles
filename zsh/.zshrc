@@ -83,15 +83,17 @@ alias hsi='hs -i'
 
 alias gcc="gcc -Wall -Werror -Wextra"
 
+# Vim is now neovim
 alias v="nvim"
-
 alias vin="nvim"
-
 alias vi="nvim"
-
 alias vim="nvim"
 
+# Vim is everywhere
 alias :q="exit"
+
+# 42FileChecker is on the place
+alias 42="~/depots/42FileChecker/42FileChecker.sh"
 
 # Color man pages
 man() {
