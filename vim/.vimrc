@@ -5,14 +5,15 @@
 "------------------------------- VIM-PLUG ------------------------------------
 call plug#begin()
 
-Plug 'vim-syntastic/syntastic'			"Avoid simple mistakes of syntax
-Plug 'tpope/vim-surround'				"Plugin to help surrounding (){}[]...
-Plug 'bling/vim-airline'				"Bottom line styling plugin
-Plug 'vim-airline/vim-airline-themes'	"Themes for vim-airline
-Plug 'chrisbra/Recover.vim'				"recover .swp files
-Plug 'ekalinin/Dockerfile.vim'			"syntax for Dockerfiles
+Plug 'vim-syntastic/syntastic'			" Avoid simple mistakes of syntax
+Plug 'tpope/vim-surround'				" Plugin to help surrounding (){}[]...
+Plug 'bling/vim-airline'				" Bottom line styling plugin
+Plug 'vim-airline/vim-airline-themes'	" Themes for vim-airline
+Plug 'chrisbra/Recover.vim'				" recover .swp files
+Plug 'ekalinin/Dockerfile.vim'			" syntax for Dockerfiles
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } "FZF !
-Plug 'tpope/vim-fugitive'				"git plugin
+Plug 'tpope/vim-fugitive'				" git plugin
+Plug 'junegunn/goyo.vim'				" Distraction free plugin
 
 " Initialize plugin system
 call plug#end()
@@ -85,7 +86,7 @@ nnoremap <C-l> :set paste! <cr>
 " from 90% without plugins
 "set path+=** " not so good idea !
 
-" Raccourci pour creer les tags dans un fichier
+" Shortcut to recursivly make tags
 command! MakeTags !ctags -R .
 
 " Do not create swapfiles
@@ -141,12 +142,18 @@ let g:airline_theme='bubblegum'
 " Show just the filename
 "let g:airline#extensions#tabline#fnamemod = ':t'
 
-" utiliser escape pour sortir du mode insert du terminal dans nvim
+"--------------------------------- GOYO ---------------------------------------
+" Goyo shortcut
+:nnoremap <leader>g <esc>:Goyo<cr>
+
+"--------------------------------- NEOVIM -------------------------------------
+
+" Use escape to get out insert-mode in terminal
 if has('nvim')
 	:tnoremap <Esc> <C-\><C-n>
 endif
 
-" Utiliser Alt-[hjkl] pour se déplacer dans les splits
+" Use Alt-[hjkl] to move around splits
 if has('nvim')
 	:tnoremap <A-h> <C-\><C-N><C-w>h
 	:tnoremap <A-j> <C-\><C-N><C-w>j
@@ -168,7 +175,7 @@ endif
 :let mapleader = " "
 
 " Use \\ as <localleader>
-:let  MAPLOCALLEADER = "\\"
+:let  maplocalleader = "\\"
 
 " Let Vim say something nice at startup
 autocmd VimEnter * echo "'O.O' Ah que coucou !"
@@ -184,3 +191,16 @@ autocmd VimEnter * echo "'O.O' Ah que coucou !"
 
 " Abbreviation for main
 :iabbrev mainc int		main(int argc, char **argv)<cr>{<cr>}<esc>ko
+
+" Unset wrap when oppening html
+:autocmd BufWrite,BufRead *.hml :setlocal nowrap
+
+" Autoindent html files when write/read it
+:autocmd BufWritePre,BufRead *.html :normal gg=G
+
+" Set differents commenting depending on the language
+:autocmd FileType c nnoremap <buffer> <localleader>c I//<esc>
+:autocmd FileType vim nnoremap <buffer> <localleader>c I"<esc>
+:autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
+:autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
+
