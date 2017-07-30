@@ -36,13 +36,13 @@ set background=dark	" Utilise des couleurs adaptees pour fond noir
 set laststatus=2	" Affiche la bar de status
 set cc=80			" Change la couleur de fond a 80 colonnes
 set showcmd			" Affiche les commandes incompletes
-					" set list set nolist nice caracteres
-					"
+					" Set list set nolist nice caracteres
+set wildmenu		" Show autocompletion possibles
+
 set listchars=space:.,tab:▸\ ,eol:¬	
 set cursorline
 " set cursorcolumn
 
-set background=dark
 hi ColorColumn ctermbg=darkgrey
 hi Folded ctermbg=NONE "set the folds to not be backgrounded 
 
@@ -84,10 +84,12 @@ nnoremap <C-l> :set paste! <cr>
 
 " from 90% without plugins
 "set path+=** " not so good idea !
-set wildmenu
 
 " Raccourci pour creer les tags dans un fichier
 command! MakeTags !ctags -R .
+
+" Do not create swapfiles
+:set noswapfile
 
 "-------------------------------- NETRW --------------------------------------
 
@@ -179,3 +181,6 @@ autocmd VimEnter * echo "'O.O' Ah que coucou !"
 
 " Use a shorcut to source my vimrc
 :nnoremap <leader>sv :so $MYVIMRC<cr>
+
+" Abbreviation for main
+:iabbrev mainc int		main(int argc, char **argv)<cr>{<cr>}<esc>ko
