@@ -180,8 +180,8 @@ endif
 " Let Vim say something nice at startup
 autocmd VimEnter * echo "'O.O' Ah que coucou !"
 
-" Map ctrl-u to set the current word Uppercase
-:imap <c-u> <esc>viw~ea
+" Map Leader-u to set the current word Uppercase
+:imap <leader>u <esc>viw~ea
 
 " Use a shorcut to edit my vimrc
 :nnoremap <leader>ev :sp $MYVIMRC<cr>G

@@ -7,7 +7,7 @@ endif
 let g:colors_name="kantum"
 
 " Errors less agressive
-highlight ErrorMsg ctermfg=1 ctermbg=0 guifg=Black guibg=Red
+hi	ErrorMsg ctermfg=1 ctermbg=0 guifg=Black guibg=Red
 
 " SetNumber color
 hi  LineNr ctermfg=12
@@ -15,12 +15,15 @@ hi  LineNr ctermfg=12
 " Statement color
 hi  Statement ctermfg=13
 
-" ColorColumn at 80 characters
-hi ColorColumn ctermbg=darkblue
+" Constant color
+hi	Constant ctermfg=37
 
-" Set the folds to not be backgrounded 
-hi Folded ctermbg=NONE
+" ColorColumn at 80 characters
+hi	ColorColumn ctermbg=darkblue
+
+" Set the folds to not be backgrounded
+hi	Folded ctermbg=NONE
 
 " set invisisble split separators
-hi VertSplit ctermfg=black
+hi	VertSplit ctermfg=black
 set fillchars="$"
