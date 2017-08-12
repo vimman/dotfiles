@@ -66,14 +66,14 @@ set noerrorbells	" Empeche vim de beeper
 set hidden
 
 " Desactive les touches directionnelles
-noremap <up> <nop>
-noremap <down> <nop>
-noremap <left> <nop>
-noremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+"noremap <up> <nop>
+"noremap <down> <nop>
+"noremap <left> <nop>
+"noremap <right> <nop>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
 
 "------------------------------- FUNCTIONS -----------------------------------
 
@@ -199,8 +199,8 @@ autocmd VimEnter * echo "'O.O' Ah que coucou !"
 :autocmd BufWritePre,BufRead *.html :normal gg=G
 
 " Set differents commenting depending on the language
+:autocmd FileType c iabbrev /* /**/<left><left>
 :autocmd FileType c nnoremap <buffer> <localleader>c I//<esc>
 :autocmd FileType vim nnoremap <buffer> <localleader>c I"<esc>
 :autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 :autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
-
