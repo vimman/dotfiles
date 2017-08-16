@@ -163,3 +163,6 @@ then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Add man pages from git repo
+export MANPATH=:~/depots/man
