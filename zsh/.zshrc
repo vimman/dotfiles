@@ -163,3 +163,12 @@ then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Highlight in less (needs to install source-highlight)
+[ ! -e ~/.source-highlight ] && mkdir ~/.source-highlight
+[ ! -e ~/.source-highlight/src-hilite-lesspipe.sh ] && \
+	mv $(which source-highlight)/src-hilite-lesspipe.sh ~/.source-highlight
+export LESSOPEN="| ~/.source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R -N --shift 5 '
+export LESSCOLOR=always
+export LESSCOLORIZER=~/.source-highlight/src-hilite-lesspipe.sh
