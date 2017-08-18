@@ -164,5 +164,14 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Highlight in less (needs to install source-highlight)
+[ ! -e ~/.source-highlight ] && mkdir ~/.source-highlight
+[ ! -e ~/.source-highlight/src-hilite-lesspipe.sh ] && \
+	cp $(find / -name "src-hilite-lesspipe.sh" 2>/dev/null) ~/.source-highlight/
+export LESSOPEN="| ~/.source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R -N --shift 5 '
+export LESSCOLOR=always
+export LESSCOLORIZER=~/.source-highlight/src-hilite-lesspipe.sh
+
 # Add man pages from git repo
 export MANPATH=:~/depots/man
