@@ -20,6 +20,9 @@ call plug#end()
 
 filetype plugin indent on    " required
 
+" Use space as <mapleader> key
+:let mapleader = " "
+
 "-------------------------------- AFFICHAGE ----------------------------------
 
 syntax enable		" Active la coloration syntaxique
@@ -42,14 +45,17 @@ set wildmenu		" Show autocompletion possibles
 
 set listchars=space:.,tab:▸\ ,eol:¬	
 set cursorline
-" set cursorcolumn
+"set cursorcolumn
 
 hi ColorColumn ctermbg=darkgrey
 hi Folded ctermbg=NONE "set the folds to not be backgrounded 
 
-" set invisisble split separators
+" Set invisisble split separators
 hi VertSplit ctermfg=0
 set fillchars=""
+
+" Set my personal scheme
+colorscheme kantum
 
 "-------------------------------- RECHERCHE ----------------------------------
 
@@ -81,7 +87,7 @@ set hidden
 nnoremap <C-n> :set relativenumber!<cr>
 
 " Raccourci clavier pour pouvoir coller du code sans problemes
-nnoremap <C-l> :set paste! <cr>
+"nnoremap <C-l> :set paste! <cr>
 
 " from 90% without plugins
 "set path+=** " not so good idea !
@@ -94,40 +100,13 @@ command! MakeTags !ctags -R .
 
 "-------------------------------- NETRW --------------------------------------
 
-" Toggle Vexplore with Ctrl-E
-function! ToggleVExplorer()
-  if exists("t:expl_buf_num")
-      let expl_win_num = bufwinnr(t:expl_buf_num)
-      if expl_win_num != -1
-          let cur_win_nr = winnr()
-          exec expl_win_num . 'wincmd w'
-          close
-          exec cur_win_nr . 'wincmd w'
-          unlet t:expl_buf_num
-      else
-          unlet t:expl_buf_num
-      endif
-  else
-      exec '1wincmd w'
-      Vexplore
-      let t:expl_buf_num = bufnr("%")
-  endif
-endfunction
-
-map <silent> <C-E> :call ToggleVExplorer()<CR>
-
 " Faire de netrw quelquechose de classe (pas au point)
 let g:netrw_banner=0		" disable annoying banner
-let g:netrw_browse_split=4	" open in prior window
-let g:netrw_altv=1			" open splits to the right
 let g:netrw_liststyle=3		" tree view
-" let g:netrw_list_hide=netrw_gitignore#Hide()
-" let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 let g:netrw_winsize=15
 let g:netrw_preview=1
 
-" Change directory to the current buffer when opening files.
-set autochdir
+nnoremap <leader>l :Lex<cr>
 
 "------------------------------ AIRLINE --------------------------------------
 
@@ -143,6 +122,7 @@ let g:airline_theme='bubblegum'
 "let g:airline#extensions#tabline#fnamemod = ':t'
 
 "--------------------------------- GOYO ---------------------------------------
+
 " Goyo shortcut
 :nnoremap <leader>g <esc>:Goyo<cr>
 
@@ -171,9 +151,6 @@ endif
 
 "------------------------------ VIMSCRIPT -------------------------------------
 
-" Use space as <mapleader> key
-:let mapleader = " "
-
 " Use \\ as <localleader>
 :let  maplocalleader = "\\"
 
@@ -184,7 +161,7 @@ autocmd VimEnter * echo "'O.O' Ah que coucou !"
 :imap <leader>u <esc>viw~ea
 
 " Use a shorcut to edit my vimrc
-:nnoremap <leader>ev :sp $MYVIMRC<cr>G
+:nnoremap <leader>ev :sp $MYVIMRC<cr>
 
 " Use a shorcut to source my vimrc
 :nnoremap <leader>sv :so $MYVIMRC<cr>
