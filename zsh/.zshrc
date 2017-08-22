@@ -177,3 +177,14 @@ mantopdf()
 {
 	man -a -t $1 | pstopdf -i -o $1.pdf > /dev/null 2>&1
 }
+
+if [ -e /Applications/calibre.app ]
+then
+	export PATH="$PATH:/Applications/calibre.app/Contents/console.app/Contents/MacOS"
+fi
+
+mantoepub()
+{
+	man -a -t $1 | pstopdf -i -o $1.pdf > /dev/null 2>&1 &&\
+		ebook-convert $1.pdf $1.epub > /dev/null 2>&1 && rm $1.pdf
+}
