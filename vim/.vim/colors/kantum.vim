@@ -24,6 +24,18 @@ hi	ColorColumn ctermbg=darkblue
 " Set the folds to not be backgrounded
 hi	Folded ctermbg=NONE
 
-" set invisisble split separators
+" Set invisisble split separators
 hi	VertSplit ctermfg=black
 set fillchars="$"
+
+" Set tabs colors
+
+" Unselected tab
+hi Tabline ctermbg=black
+hi Tabline ctermfg=grey
+
+" Selected tab
+hi TablineSel ctermfg=magenta
+hi TablineSel ctermbg=black
+
+hi TabLinefill ctermfg=0

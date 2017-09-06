@@ -39038,9 +39038,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>611 1008 1016 502 0 0 3200 1800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>55 1028 1130 654 0 0 3200 1777 </string>
+	<string>1281 712 1130 704 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1600 4 1599 886 0 0 3200 1777 </string>
+	<string>1 9 1277 1404 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>317 278 1130 704 0 0 2560 1440 </string>
 	<key>New Bookmarks</key>
@@ -39738,6 +39738,8 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowPaneTitles</key>
 	<false/>

@@ -14,6 +14,11 @@ Plug 'ekalinin/Dockerfile.vim'			" syntax for Dockerfiles
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } "FZF !
 Plug 'tpope/vim-fugitive'				" git plugin
 Plug 'junegunn/goyo.vim'				" Distraction free plugin
+Plug 'gilligan/vim-lldb'				" lldb
+
+if has('nvim')
+	Plug 'critiqjo/lldb.nvim'			" lldb integration needs python-client
+endif
 
 " Initialize plugin system
 call plug#end()
@@ -126,6 +131,9 @@ let g:airline_theme='bubblegum'
 " Goyo shortcut
 :nnoremap <leader>g <esc>:Goyo<cr>
 
+let g:goyo_width=160
+let g:goyo_height="80%"
+
 "--------------------------------- NEOVIM -------------------------------------
 
 " Use escape to get out insert-mode in terminal
@@ -148,6 +156,14 @@ endif
 :nnoremap <A-j> <C-w>j
 :nnoremap <A-k> <C-w>k
 :nnoremap <A-l> <C-w>l
+
+"--------------------------------- TABS ---------------------------------------
+
+" Use <alt-j> and <alt-k> to change tab
+:inoremap <C-j> gT
+:inoremap <C-k> gt
+:nnoremap <C-j> gT
+:nnoremap <C-k> gt
 
 "------------------------------ VIMSCRIPT -------------------------------------
 
