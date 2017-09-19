@@ -188,3 +188,12 @@ mantoepub()
 	man -a -t $1 | pstopdf -i -o $1.pdf > /dev/null 2>&1 &&\
 		ebook-convert $1.pdf $1.epub > /dev/null 2>&1 && rm $1.pdf
 }
+
+# Way to make termite work on server
+export TERM=xterm
+
+
+if [[ `uname -a` == *vps416438.ovh.net* ]]
+then
+    tmux a
+fi
