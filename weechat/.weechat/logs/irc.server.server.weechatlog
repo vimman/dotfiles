@@ -1,0 +1,25 @@
+2017-09-22 00:04:44	--	irc: connecting to server irc.online.net/6667...
+2017-09-22 00:04:44	--	irc: connected to irc.online.net/6667 (62.210.159.99)
+2017-09-22 00:04:44	--	online-dc2.fr.eu.evolu.net: *** Looking up your hostname...
+2017-09-22 00:04:44	--	online-dc2.fr.eu.evolu.net: *** Checking ident...
+2017-09-22 00:04:44	--	online-dc2.fr.eu.evolu.net: *** Found your hostname
+2017-09-22 00:04:47	--	online-dc2.fr.eu.evolu.net: *** No ident response; username prefixed with ~
+2017-09-22 00:04:47	--	Welcome to the Evolu.NET IRC Network kantum!~kentin@249.ip-217-182-206.eu
+2017-09-22 00:04:47	--	Your host is online-dc2.fr.eu.evolu.net, running version Unreal3.2.10.4
+2017-09-22 00:04:47	--	This server was created mercredi 14 janvier (UTC+0100) at 2015, 17:55:46
+2017-09-22 00:04:47	--	online-dc2.fr.eu.evolu.net CR1.8.03-Unreal3.2.10.4 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2017-09-22 00:04:47	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=20 CHANLIMIT=#:20 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2017-09-22 00:04:47	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=Evolu.NET CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
+2017-09-22 00:04:47	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2017-09-22 00:04:47	--	There are 33 users and 549 invisible on 10 servers
+2017-09-22 00:04:47	--	29 :operator(s) online
+2017-09-22 00:04:47	--	215 :channels formed
+2017-09-22 00:04:47	--	I have 137 clients and 1 servers
+2017-09-22 00:04:47	--	137 320 :Current local users 137, max 320
+2017-09-22 00:04:47	--	582 1064 :Current global users 582, max 1064
+2017-09-22 00:04:47	--	MOTD File is missing
+2017-09-22 00:04:47	--	User mode [+ix] by kantum
+2017-09-22 00:04:47	--	EvoluNET (services@evolu.net): [Logon News - 25 Mar 2012] Bienvenue sur le reseau Evolu.NET. Nos equipes sont a votre disposition sur les differents salons officiels du reseau. Informations pseudos / salons et fonctionnalites supplementaires (statistiques, compteurs...) sur http://panel.evolu.net !
+2017-09-22 00:04:47	--	opsb (opsb@evolu.net): Your Host is being Scanned for Open Proxies
+2017-09-22 00:04:47	--	CTCP requested by SecureServ: VERSION
+2017-09-22 00:04:47	--	CTCP reply to SecureServ: VERSION WeeChat 1.9 (Jun 25 2017)

@@ -1,0 +1,236 @@
+2017-09-22 00:11:36	--	irc: disconnected from server
+2017-09-22 00:11:45	--	irc: connecting to server "irc.evolu.net/6657 (SSL)...
+2017-09-22 00:11:45	=!=	irc: address ""irc.evolu.net" not found
+2017-09-22 00:11:45	=!=	irc: error: Name or service not known
+2017-09-22 00:11:45	--	irc: reconnecting to server in 10 seconds
+2017-09-22 00:11:55	--	irc: reconnecting to server...
+2017-09-22 00:11:55	--	irc: connecting to server "irc.evolu.net/6657 (SSL)...
+2017-09-22 00:11:55	=!=	irc: address ""irc.evolu.net" not found
+2017-09-22 00:11:55	=!=	irc: error: Name or service not known
+2017-09-22 00:11:55	--	irc: reconnecting to server in 20 seconds
+2017-09-22 00:12:15	--	irc: reconnecting to server...
+2017-09-22 00:12:15	--	irc: connecting to server "irc.evolu.net/6657 (SSL)...
+2017-09-22 00:12:15	=!=	irc: address ""irc.evolu.net" not found
+2017-09-22 00:12:15	=!=	irc: error: Name or service not known
+2017-09-22 00:12:15	--	irc: reconnecting to server in 40 seconds
+2017-09-22 00:12:55	--	irc: reconnecting to server...
+2017-09-22 00:12:55	--	irc: connecting to server "irc.evolu.net/6657 (SSL)...
+2017-09-22 00:12:55	=!=	irc: address ""irc.evolu.net" not found
+2017-09-22 00:12:55	=!=	irc: error: Name or service not known
+2017-09-22 00:12:55	--	irc: reconnecting to server in 1 minute, 20 seconds
+2017-09-22 00:14:15	--	irc: reconnecting to server...
+2017-09-22 00:14:15	--	irc: connecting to server "irc.evolu.net/6657 (SSL)...
+2017-09-22 00:14:15	=!=	irc: address ""irc.evolu.net" not found
+2017-09-22 00:14:15	=!=	irc: error: Name or service not known
+2017-09-22 00:14:15	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2017-09-22 00:15:41	--	irc: connecting to server irc.online.net/6657 (SSL)...
+2017-09-22 00:15:41	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2017-09-22 00:15:41	--	gnutls: receiving 1 certificate
+2017-09-22 00:15:41	--	 - certificate[1] info:
+2017-09-22 00:15:41	--	   - subject `C=FR,ST=France,L=Vitry,O=Evolu.NET,OU=IRCd,CN=free-vitry.fr.eu.evolu.net', issuer `C=FR,ST=France,L=Vitry,O=Evolu.NET,OU=IRCd,CN=free-vitry.fr.eu.evolu.net', RSA key 1024 bits, signed using RSA-SHA1, activated `2009-08-23 15:03:31 UTC', expires `2010-08-23 15:03:31 UTC', SHA-1 fingerprint `dd2d067434277a82216012399d3a104201e92646'
+2017-09-22 00:15:41	=!=	gnutls: certificate has expired
+2017-09-22 00:15:41	=!=	gnutls: the hostname in the certificate does NOT match "irc.online.net"
+2017-09-22 00:15:41	=!=	gnutls: peer's certificate is NOT trusted
+2017-09-22 00:15:41	=!=	gnutls: peer's certificate issuer is unknown
+2017-09-22 00:15:41	=!=	irc: TLS handshake failed
+2017-09-22 00:15:41	=!=	irc: error: Error in the certificate.
+2017-09-22 00:15:41	--	irc: reconnecting to server in 10 seconds
+2017-09-22 00:15:51	--	irc: reconnecting to server...
+2017-09-22 00:15:51	--	irc: connecting to server irc.online.net/6657 (SSL)...
+2017-09-22 00:15:51	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2017-09-22 00:15:51	--	gnutls: receiving 1 certificate
+2017-09-22 00:15:51	--	 - certificate[1] info:
+2017-09-22 00:15:51	--	   - subject `C=FR,ST=France,L=Vitry,O=Evolu.NET,OU=IRCd,CN=free-vitry.fr.eu.evolu.net', issuer `C=FR,ST=France,L=Vitry,O=Evolu.NET,OU=IRCd,CN=free-vitry.fr.eu.evolu.net', RSA key 1024 bits, signed using RSA-SHA1, activated `2009-08-23 15:03:31 UTC', expires `2010-08-23 15:03:31 UTC', SHA-1 fingerprint `dd2d067434277a82216012399d3a104201e92646'
+2017-09-22 00:15:51	=!=	gnutls: certificate has expired
+2017-09-22 00:15:51	=!=	gnutls: the hostname in the certificate does NOT match "irc.online.net"
+2017-09-22 00:15:51	=!=	gnutls: peer's certificate is NOT trusted
+2017-09-22 00:15:51	=!=	gnutls: peer's certificate issuer is unknown
+2017-09-22 00:15:51	=!=	irc: TLS handshake failed
+2017-09-22 00:15:51	=!=	irc: error: Error in the certificate.
+2017-09-22 00:15:51	--	irc: reconnecting to server in 20 seconds
+2017-09-22 00:16:11	--	irc: reconnecting to server...
+2017-09-22 00:16:11	--	irc: connecting to server irc.online.net/6657 (SSL)...
+2017-09-22 00:16:11	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2017-09-22 00:16:11	--	gnutls: receiving 1 certificate
+2017-09-22 00:16:11	--	 - certificate[1] info:
+2017-09-22 00:16:11	--	   - subject `C=FR,ST=France,L=Vitry,O=Evolu.NET,OU=IRCd,CN=online-dc3.fr.eu.evolu.net', issuer `C=FR,ST=France,L=Vitry,O=Evolu.NET,OU=IRCd,CN=online-dc3.fr.eu.evolu.net', RSA key 1024 bits, signed using RSA-SHA1, activated `2014-04-25 10:38:04 UTC', expires `2015-04-25 10:38:04 UTC', SHA-1 fingerprint `21407fe2a823fca8c4053861a3d33611975d9ae2'
+2017-09-22 00:16:11	=!=	gnutls: certificate has expired
+2017-09-22 00:16:11	=!=	gnutls: the hostname in the certificate does NOT match "irc.online.net"
+2017-09-22 00:16:11	=!=	gnutls: peer's certificate is NOT trusted
+2017-09-22 00:16:11	=!=	gnutls: peer's certificate issuer is unknown
+2017-09-22 00:16:11	=!=	irc: TLS handshake failed
+2017-09-22 00:16:11	=!=	irc: error: Error in the certificate.
+2017-09-22 00:16:11	--	irc: reconnecting to server in 40 seconds
+2017-09-22 00:16:51	--	irc: reconnecting to server...
+2017-09-22 00:16:51	--	irc: connecting to server irc.online.net/6657 (SSL)...
+2017-09-22 00:16:51	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2017-09-22 00:16:51	--	gnutls: receiving 1 certificate
+2017-09-22 00:16:51	--	 - certificate[1] info:
+2017-09-22 00:16:51	--	   - subject `C=FR,ST=France,L=Vitry,O=Evolu.NET,OU=IRCd,CN=online-dc3.fr.eu.evolu.net', issuer `C=FR,ST=France,L=Vitry,O=Evolu.NET,OU=IRCd,CN=online-dc3.fr.eu.evolu.net', RSA key 1024 bits, signed using RSA-SHA1, activated `2014-04-25 10:38:04 UTC', expires `2015-04-25 10:38:04 UTC', SHA-1 fingerprint `21407fe2a823fca8c4053861a3d33611975d9ae2'
+2017-09-22 00:16:51	=!=	gnutls: certificate has expired
+2017-09-22 00:16:51	=!=	gnutls: the hostname in the certificate does NOT match "irc.online.net"
+2017-09-22 00:16:51	=!=	gnutls: peer's certificate is NOT trusted
+2017-09-22 00:16:51	=!=	gnutls: peer's certificate issuer is unknown
+2017-09-22 00:16:51	=!=	irc: TLS handshake failed
+2017-09-22 00:16:51	=!=	irc: error: Error in the certificate.
+2017-09-22 00:16:51	--	irc: reconnecting to server in 1 minute, 20 seconds
+2017-09-22 00:18:11	--	irc: reconnecting to server...
+2017-09-22 00:18:11	=!=	irc: unknown address for server "evolu.net", cannot connect
+2017-09-22 00:18:11	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2017-09-22 00:18:49	=!=	irc: unknown address for server "evolu.net", cannot connect
+2017-09-22 00:19:09	=!=	irc: this buffer is not a channel!
+2017-09-22 00:23:57	--	irc: connecting to server irc.online.net/6667...
+2017-09-22 00:23:57	--	irc: connected to irc.online.net/6667 (62.210.156.11)
+2017-09-22 00:23:57	--	online-dc3.fr.eu.evolu.net: *** Looking up your hostname...
+2017-09-22 00:23:57	--	online-dc3.fr.eu.evolu.net: *** Checking ident...
+2017-09-22 00:23:57	--	online-dc3.fr.eu.evolu.net: *** Found your hostname
+2017-09-22 00:24:00	--	online-dc3.fr.eu.evolu.net: *** No ident response; username prefixed with ~
+2017-09-22 00:24:00	--	Welcome to the Evolu.NET IRC Network kantum!~kentin@249.ip-217-182-206.eu
+2017-09-22 00:24:00	--	Your host is online-dc3.fr.eu.evolu.net, running version Unreal3.2.10.2
+2017-09-22 00:24:00	--	This server was created vendredi 25 avril (UTC+0200) at 2014, 12:38:39
+2017-09-22 00:24:00	--	online-dc3.fr.eu.evolu.net CR1.8.03-Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2017-09-22 00:24:00	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=20 CHANLIMIT=#:20 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2017-09-22 00:24:00	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=Evolu.NET CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
+2017-09-22 00:24:00	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2017-09-22 00:24:00	--	There are 33 users and 535 invisible on 10 servers
+2017-09-22 00:24:00	--	29 :operator(s) online
+2017-09-22 00:24:00	--	213 :channels formed
+2017-09-22 00:24:00	--	I have 384 clients and 1 servers
+2017-09-22 00:24:00	--	384 755 :Current local users 384, max 755
+2017-09-22 00:24:00	--	568 1064 :Current global users 568, max 1064
+2017-09-22 00:24:00	--	MOTD File is missing
+2017-09-22 00:24:00	--	User mode [+ix] by kantum
+2017-09-22 00:24:00	--	EvoluNET (services@evolu.net): [Logon News - 25 Mar 2012] Bienvenue sur le reseau Evolu.NET. Nos equipes sont a votre disposition sur les differents salons officiels du reseau. Informations pseudos / salons et fonctionnalites supplementaires (statistiques, compteurs...) sur http://panel.evolu.net !
+2017-09-22 00:24:00	--	opsb (opsb@evolu.net): Your Host is being Scanned for Open Proxies
+2017-09-22 00:24:00	--	CTCP requested by SecureServ: VERSION
+2017-09-22 00:24:00	--	CTCP reply to SecureServ: VERSION WeeChat 1.9 (Jun 25 2017)
+2017-09-22 00:25:14	--	irc: disconnected from server
+2017-09-22 00:25:24	--	irc: connecting to server irc.online.net/6667...
+2017-09-22 00:25:24	--	irc: connected to irc.online.net/6667 (62.210.156.11)
+2017-09-22 00:25:24	--	online-dc3.fr.eu.evolu.net: *** Looking up your hostname...
+2017-09-22 00:25:24	--	online-dc3.fr.eu.evolu.net: *** Found your hostname (cached)
+2017-09-22 00:25:24	--	online-dc3.fr.eu.evolu.net: *** Checking ident...
+2017-09-22 00:25:27	--	online-dc3.fr.eu.evolu.net: *** No ident response; username prefixed with ~
+2017-09-22 00:25:27	--	Welcome to the Evolu.NET IRC Network kantum!~kentin@249.ip-217-182-206.eu
+2017-09-22 00:25:27	--	Your host is online-dc3.fr.eu.evolu.net, running version Unreal3.2.10.2
+2017-09-22 00:25:27	--	This server was created vendredi 25 avril (UTC+0200) at 2014, 12:38:39
+2017-09-22 00:25:27	--	online-dc3.fr.eu.evolu.net CR1.8.03-Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2017-09-22 00:25:27	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=20 CHANLIMIT=#:20 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2017-09-22 00:25:27	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=Evolu.NET CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
+2017-09-22 00:25:27	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2017-09-22 00:25:27	--	There are 33 users and 535 invisible on 10 servers
+2017-09-22 00:25:27	--	29 :operator(s) online
+2017-09-22 00:25:27	--	211 :channels formed
+2017-09-22 00:25:27	--	I have 384 clients and 1 servers
+2017-09-22 00:25:27	--	384 755 :Current local users 384, max 755
+2017-09-22 00:25:27	--	568 1064 :Current global users 568, max 1064
+2017-09-22 00:25:27	--	MOTD File is missing
+2017-09-22 00:25:27	--	User mode [+ix] by kantum
+2017-09-22 00:25:27	--	EvoluNET (services@evolu.net): [Logon News - 25 Mar 2012] Bienvenue sur le reseau Evolu.NET. Nos equipes sont a votre disposition sur les differents salons officiels du reseau. Informations pseudos / salons et fonctionnalites supplementaires (statistiques, compteurs...) sur http://panel.evolu.net !
+2017-09-22 00:25:27	--	opsb (opsb@evolu.net): Your Host is being Scanned for Open Proxies
+2017-09-22 00:25:27	--	CTCP requested by SecureServ: VERSION
+2017-09-22 00:25:27	--	CTCP reply to SecureServ: VERSION WeeChat 1.9 (Jun 25 2017)
+2017-09-22 00:27:51	--	irc: disconnected from server
+2017-09-22 00:27:57	--	irc: connecting to server irc.online.net/6667...
+2017-09-22 00:27:57	--	irc: connected to irc.online.net/6667 (62.210.156.11)
+2017-09-22 00:27:57	--	online-dc3.fr.eu.evolu.net: *** Looking up your hostname...
+2017-09-22 00:27:57	--	online-dc3.fr.eu.evolu.net: *** Found your hostname (cached)
+2017-09-22 00:27:57	--	online-dc3.fr.eu.evolu.net: *** Checking ident...
+2017-09-22 00:28:00	--	online-dc3.fr.eu.evolu.net: *** No ident response; username prefixed with ~
+2017-09-22 00:28:00	--	Welcome to the Evolu.NET IRC Network kantum!~kentin@249.ip-217-182-206.eu
+2017-09-22 00:28:00	--	Your host is online-dc3.fr.eu.evolu.net, running version Unreal3.2.10.2
+2017-09-22 00:28:00	--	This server was created vendredi 25 avril (UTC+0200) at 2014, 12:38:39
+2017-09-22 00:28:00	--	online-dc3.fr.eu.evolu.net CR1.8.03-Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2017-09-22 00:28:00	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=20 CHANLIMIT=#:20 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2017-09-22 00:28:00	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=Evolu.NET CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
+2017-09-22 00:28:00	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2017-09-22 00:28:00	--	There are 33 users and 534 invisible on 10 servers
+2017-09-22 00:28:00	--	29 :operator(s) online
+2017-09-22 00:28:00	--	213 :channels formed
+2017-09-22 00:28:00	--	I have 383 clients and 1 servers
+2017-09-22 00:28:00	--	383 755 :Current local users 383, max 755
+2017-09-22 00:28:00	--	567 1064 :Current global users 567, max 1064
+2017-09-22 00:28:00	--	MOTD File is missing
+2017-09-22 00:28:00	--	User mode [+ix] by kantum
+2017-09-22 00:28:00	--	EvoluNET (services@evolu.net): [Logon News - 25 Mar 2012] Bienvenue sur le reseau Evolu.NET. Nos equipes sont a votre disposition sur les differents salons officiels du reseau. Informations pseudos / salons et fonctionnalites supplementaires (statistiques, compteurs...) sur http://panel.evolu.net !
+2017-09-22 00:28:00	--	opsb (opsb@evolu.net): Your Host is being Scanned for Open Proxies
+2017-09-22 00:28:00	--	CTCP requested by SecureServ: VERSION
+2017-09-22 00:28:00	--	CTCP reply to SecureServ: VERSION WeeChat 1.9 (Jun 25 2017)
+2017-09-22 00:36:13	--	irc: disconnected from server
+2017-09-22 00:36:19	--	irc: connecting to server irc.online.net/6667...
+2017-09-22 00:36:19	--	irc: connected to irc.online.net/6667 (62.210.156.11)
+2017-09-22 00:36:19	--	online-dc3.fr.eu.evolu.net: *** Looking up your hostname...
+2017-09-22 00:36:19	--	online-dc3.fr.eu.evolu.net: *** Checking ident...
+2017-09-22 00:36:19	--	online-dc3.fr.eu.evolu.net: *** Found your hostname
+2017-09-22 00:36:21	--	online-dc3.fr.eu.evolu.net: *** No ident response; username prefixed with ~
+2017-09-22 00:36:21	--	Welcome to the Evolu.NET IRC Network kantum!~kentin@249.ip-217-182-206.eu
+2017-09-22 00:36:21	--	Your host is online-dc3.fr.eu.evolu.net, running version Unreal3.2.10.2
+2017-09-22 00:36:21	--	This server was created vendredi 25 avril (UTC+0200) at 2014, 12:38:39
+2017-09-22 00:36:21	--	online-dc3.fr.eu.evolu.net CR1.8.03-Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2017-09-22 00:36:21	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=20 CHANLIMIT=#:20 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2017-09-22 00:36:21	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=Evolu.NET CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
+2017-09-22 00:36:21	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2017-09-22 00:36:21	--	There are 33 users and 533 invisible on 10 servers
+2017-09-22 00:36:21	--	29 :operator(s) online
+2017-09-22 00:36:21	--	213 :channels formed
+2017-09-22 00:36:21	--	I have 382 clients and 1 servers
+2017-09-22 00:36:21	--	382 755 :Current local users 382, max 755
+2017-09-22 00:36:21	--	566 1064 :Current global users 566, max 1064
+2017-09-22 00:36:21	--	MOTD File is missing
+2017-09-22 00:36:21	--	User mode [+ix] by kantum
+2017-09-22 00:36:21	--	EvoluNET (services@evolu.net): [Logon News - 25 Mar 2012] Bienvenue sur le reseau Evolu.NET. Nos equipes sont a votre disposition sur les differents salons officiels du reseau. Informations pseudos / salons et fonctionnalites supplementaires (statistiques, compteurs...) sur http://panel.evolu.net !
+2017-09-22 00:36:21	--	opsb (opsb@evolu.net): Your Host is being Scanned for Open Proxies
+2017-09-22 00:36:21	--	CTCP requested by SecureServ: VERSION
+2017-09-22 00:36:21	--	CTCP reply to SecureServ: VERSION WeeChat 1.9 (Jun 25 2017)
+2017-09-22 00:43:39	--	irc: disconnected from server
+2017-09-22 00:43:45	--	irc: connecting to server irc.online.net/6667...
+2017-09-22 00:43:45	--	irc: connected to irc.online.net/6667 (62.210.156.11)
+2017-09-22 00:43:45	--	online-dc3.fr.eu.evolu.net: *** Looking up your hostname...
+2017-09-22 00:43:45	--	online-dc3.fr.eu.evolu.net: *** Found your hostname (cached)
+2017-09-22 00:43:45	--	online-dc3.fr.eu.evolu.net: *** Checking ident...
+2017-09-22 00:43:48	--	online-dc3.fr.eu.evolu.net: *** No ident response; username prefixed with ~
+2017-09-22 00:43:48	--	Welcome to the Evolu.NET IRC Network kantum!~kentin@249.ip-217-182-206.eu
+2017-09-22 00:43:48	--	Your host is online-dc3.fr.eu.evolu.net, running version Unreal3.2.10.2
+2017-09-22 00:43:48	--	This server was created vendredi 25 avril (UTC+0200) at 2014, 12:38:39
+2017-09-22 00:43:48	--	online-dc3.fr.eu.evolu.net CR1.8.03-Unreal3.2.10.2 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2017-09-22 00:43:48	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=20 CHANLIMIT=#:20 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2017-09-22 00:43:48	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=Evolu.NET CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
+2017-09-22 00:43:48	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2017-09-22 00:43:48	--	There are 33 users and 528 invisible on 10 servers
+2017-09-22 00:43:48	--	29 :operator(s) online
+2017-09-22 00:43:48	--	213 :channels formed
+2017-09-22 00:43:48	--	I have 377 clients and 1 servers
+2017-09-22 00:43:48	--	377 755 :Current local users 377, max 755
+2017-09-22 00:43:48	--	561 1064 :Current global users 561, max 1064
+2017-09-22 00:43:48	--	MOTD File is missing
+2017-09-22 00:43:48	--	User mode [+ix] by kantum
+2017-09-22 00:43:48	--	EvoluNET (services@evolu.net): [Logon News - 25 Mar 2012] Bienvenue sur le reseau Evolu.NET. Nos equipes sont a votre disposition sur les differents salons officiels du reseau. Informations pseudos / salons et fonctionnalites supplementaires (statistiques, compteurs...) sur http://panel.evolu.net !
+2017-09-22 00:43:48	--	opsb (opsb@evolu.net): Your Host is being Scanned for Open Proxies
+2017-09-22 00:43:48	--	CTCP requested by SecureServ: VERSION
+2017-09-22 00:43:48	--	CTCP reply to SecureServ: VERSION WeeChat 1.9 (Jun 25 2017)
+2017-09-22 00:45:25	--	irc: disconnected from server
+2017-09-22 00:45:30	--	irc: connecting to server irc.online.net/6667...
+2017-09-22 00:45:30	--	irc: connected to irc.online.net/6667 (62.210.159.99)
+2017-09-22 00:45:30	--	online-dc2.fr.eu.evolu.net: *** Looking up your hostname...
+2017-09-22 00:45:30	--	online-dc2.fr.eu.evolu.net: *** Checking ident...
+2017-09-22 00:45:31	--	online-dc2.fr.eu.evolu.net: *** Found your hostname
+2017-09-22 00:45:33	--	online-dc2.fr.eu.evolu.net: *** No ident response; username prefixed with ~
+2017-09-22 00:45:33	--	Welcome to the Evolu.NET IRC Network kantum!~kentin@249.ip-217-182-206.eu
+2017-09-22 00:45:33	--	Your host is online-dc2.fr.eu.evolu.net, running version Unreal3.2.10.4
+2017-09-22 00:45:33	--	This server was created mercredi 14 janvier (UTC+0100) at 2015, 17:55:46
+2017-09-22 00:45:33	--	online-dc2.fr.eu.evolu.net CR1.8.03-Unreal3.2.10.4 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+2017-09-22 00:45:33	--	CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=20 CHANLIMIT=#:20 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2017-09-22 00:45:33	--	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=Evolu.NET CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
+2017-09-22 00:45:33	--	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2017-09-22 00:45:33	--	There are 33 users and 527 invisible on 10 servers
+2017-09-22 00:45:33	--	29 :operator(s) online
+2017-09-22 00:45:33	--	211 :channels formed
+2017-09-22 00:45:33	--	I have 132 clients and 1 servers
+2017-09-22 00:45:33	--	132 320 :Current local users 132, max 320
+2017-09-22 00:45:33	--	560 1064 :Current global users 560, max 1064
+2017-09-22 00:45:33	--	MOTD File is missing
+2017-09-22 00:45:33	--	User mode [+ix] by kantum
+2017-09-22 00:45:33	--	EvoluNET (services@evolu.net): [Logon News - 25 Mar 2012] Bienvenue sur le reseau Evolu.NET. Nos equipes sont a votre disposition sur les differents salons officiels du reseau. Informations pseudos / salons et fonctionnalites supplementaires (statistiques, compteurs...) sur http://panel.evolu.net !
+2017-09-22 00:45:33	--	opsb (opsb@evolu.net): Your Host is being Scanned for Open Proxies
+2017-09-22 00:45:33	--	CTCP requested by SecureServ: VERSION
+2017-09-22 00:45:33	--	CTCP reply to SecureServ: VERSION WeeChat 1.9 (Jun 25 2017)
