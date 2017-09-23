@@ -174,7 +174,7 @@ endif
 autocmd VimEnter * echo "'O.O' Ah que coucou !"
 
 " Map Leader-u to set the current word Uppercase
-:imap <leader>u <esc>viw~ea
+:imap <localleader>u <esc>viw~ea
 
 " Use a shorcut to edit my vimrc
 :nnoremap <leader>ev :sp $MYVIMRC<cr>
