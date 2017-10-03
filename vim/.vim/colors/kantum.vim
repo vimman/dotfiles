@@ -25,17 +25,20 @@ hi	ColorColumn ctermbg=darkblue
 hi	Folded ctermbg=NONE
 
 " Set invisisble split separators
-hi	VertSplit ctermfg=black
-set fillchars="$"
+hi VertSplit cterm=NONE
+set fillchars=""
 
 " Set tabs colors
 
 " Unselected tab
-hi Tabline ctermbg=black
+hi Tabline ctermbg=NONE
 hi Tabline ctermfg=grey
 
 " Selected tab
 hi TablineSel ctermfg=magenta
-hi TablineSel ctermbg=black
+hi TablineSel ctermbg=NONE
+hi TabLinefill cterm=NONE
 
-hi TabLinefill ctermfg=0
+" Set transparent airline
+hi StatusLine cterm=NONE
+hi StatusLineNC ctermbg=NONE

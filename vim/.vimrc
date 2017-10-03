@@ -41,6 +41,7 @@ set scrolloff=5		" Affiche un minimum de 5 lignes autour du curseur
 set shiftwidth=4	" Regle les tabulations automatiques sur 4 espaces
 set tabstop=4		" Regle l'affichage des tabulations sur 4 espaces
 set background=dark	" Utilise des couleurs adaptees pour fond noir
+set splitright		" Ouvre les verticalsplit sur la droite
 
 set laststatus=2	" Affiche la bar de status
 set cc=80			" Change la couleur de fond a 80 colonnes
@@ -48,16 +49,9 @@ set showcmd			" Affiche les commandes incompletes
 					" Set list set nolist nice caracteres
 set wildmenu		" Show autocompletion possibles
 
-set listchars=space:.,tab:▸\ ,eol:¬	
+set listchars=space:.,tab:▸\ ,eol:¬
 set cursorline
 "set cursorcolumn
-
-hi ColorColumn ctermbg=darkgrey
-hi Folded ctermbg=NONE "set the folds to not be backgrounded 
-
-" Set invisisble split separators
-hi VertSplit ctermfg=0
-set fillchars=""
 
 " Set my personal scheme
 colorscheme kantum
@@ -197,3 +191,6 @@ autocmd VimEnter * echo "'O.O' Ah que coucou !"
 :autocmd FileType vim nnoremap <buffer> <localleader>c I"<esc>
 :autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 :autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
+
+" Open the previous buffer when delete one
+command Bd bp\|bd \#
