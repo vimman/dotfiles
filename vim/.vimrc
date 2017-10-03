@@ -14,7 +14,7 @@ Plug 'ekalinin/Dockerfile.vim'			" syntax for Dockerfiles
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } "FZF !
 Plug 'tpope/vim-fugitive'				" git plugin
 Plug 'junegunn/goyo.vim'				" Distraction free plugin
-Plug 'gilligan/vim-lldb'				" lldb
+"Plug 'gilligan/vim-lldb'				" lldb
 
 if has('nvim')
 	Plug 'critiqjo/lldb.nvim'			" lldb integration needs python-client

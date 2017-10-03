@@ -190,11 +190,4 @@ mantoepub()
 }
 
 # Way to make termite work on server
-export TERM=xterm
-
-
-if [[ `uname -a` == *vps416438.ovh.net* ]]
-then
-	export TERM=tmux-256color
-    tmux a
-fi
+export TERM=tmux-256color
