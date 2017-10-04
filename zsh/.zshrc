@@ -47,7 +47,7 @@ source ~/.oh-my-zsh/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8 fr_FR.UTF-8 
+# export LANG=en_US.UTF-8 fr_FR.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -113,7 +113,7 @@ freewifi()
 	gw=$(ip r |grep default |awk '{print $3}')
 	if ! (ping -c 1 -w 1 $gw >/dev/null 2>&1) && [[ `uname` == Linux ]]
 	then
-		nmcli c down FreeWifi 
+		nmcli c down FreeWifi
 		nmcli c up FreeWifi
 	elif ! (ping -c 1 -w 1 $gw >/dev/null 2>&1) && [[ `uname` == Darwin ]]
 	then
@@ -192,7 +192,10 @@ mantoepub()
 # Way to make termite work on server
 export TERM=screen-256color
 
-if [[ `uname -a` == *vps416438.ovh.net* ]]
+if [[ `uname -a` == *vps416438.ovh.net*  && $TMUX = "" ]]
 then
 	tmux a
 fi
+
+# Makes ranger to open files with neovim
+export EDITOR='vim'
