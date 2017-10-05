@@ -33,7 +33,7 @@ filetype plugin indent on    " required
 syntax enable		" Active la coloration syntaxique
 set mouse=a			" Permet d'utiliser la souris
 set title			" Met a jour le titre du terminal
-set number			" Affiche le numero de ligne
+"set number			" Affiche le numero de ligne
 set ruler			" Affiche la position actuelle du curseur
 set wrap			" Affiche les lignes trop longues sur plusieur lignes
 set linebreak		" Ne coupe pas les mots
@@ -83,7 +83,8 @@ set hidden
 "------------------------------- FUNCTIONS -----------------------------------
 
 " Raccourci pour passer la numérotation en mode relative "
-nnoremap <C-n> :set relativenumber!<cr>
+nnoremap <C-m> :set relativenumber!<cr>
+nnoremap <C-n> :set number!<cr>
 
 " Raccourci clavier pour pouvoir coller du code sans problemes
 "nnoremap <C-l> :set paste! <cr>
@@ -92,7 +93,7 @@ nnoremap <C-n> :set relativenumber!<cr>
 "set path+=** " not so good idea !
 
 " Shortcut to recursivly make tags
-command! MakeTags !ctags -R .
+command! Mt !ctags -R .
 
 " Do not create swapfiles
 :set noswapfile
@@ -193,4 +194,31 @@ autocmd VimEnter * echo "'O.O' Ah que coucou !"
 :autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
 
 " Open the previous buffer when delete one
-command Bd bp\|bd \#
+:command! Bd bp\|bd \#
+
+" Neovim terminal toggle
+let g:term_buf = 0
+let g:term_win = 0
+
+function! Term_toggle(height)
+    if win_gotoid(g:term_win)
+        hide
+    else
+        botright new
+        exec "resize " . a:height * 2
+        try
+            exec "buffer " . g:term_buf
+        catch
+            call termopen($SHELL, {"detach": 0})
+            let g:term_buf = bufnr("")
+        endtry
+        startinsert!
+        let g:term_win = win_getid()
+    endif
+endfunction
+
+
+if has('nvim')
+	nnoremap <localleader>t :call Term_toggle(10)<cr>
+	tnoremap <localleader>t <C-\><C-n>:call Term_toggle(10)<cr>
+endif
