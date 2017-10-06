@@ -412,3 +412,5 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 1 # decrease brightness
 exec synclient TouchpadOff=1
 exec synclient RightButtonAreaLeft=0
 exec synclient RightButtonAreaTop=0
+
+exec redshift

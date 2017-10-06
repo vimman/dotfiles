@@ -71,20 +71,20 @@ set noerrorbells	" Empeche vim de beeper
 set hidden
 
 " Desactive les touches directionnelles
-"noremap <up> <nop>
-"noremap <down> <nop>
-"noremap <left> <nop>
-"noremap <right> <nop>
-"inoremap <up> <nop>
-"inoremap <down> <nop>
-"inoremap <left> <nop>
-"inoremap <right> <nop>
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 
 "------------------------------- FUNCTIONS -----------------------------------
 
 " Raccourci pour passer la numérotation en mode relative "
-nnoremap <C-m> :set relativenumber!<cr>
-nnoremap <C-n> :set number!<cr>
+nnoremap <leader>N :set relativenumber!<cr>
+nnoremap <leader>n :set number!<cr>
 
 " Raccourci clavier pour pouvoir coller du code sans problemes
 "nnoremap <C-l> :set paste! <cr>
