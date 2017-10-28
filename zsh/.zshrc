@@ -199,4 +199,4 @@ then
 fi
 
 # Makes ranger to open files with neovim
-export EDITOR='vim'
+export EDITOR='nvim'
