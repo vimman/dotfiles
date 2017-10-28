@@ -184,7 +184,7 @@ autocmd VimEnter * echo "'O.O' Ah que coucou !"
 :autocmd BufWrite,BufRead *.hml :setlocal nowrap
 
 " Autoindent html files when write/read it
-:autocmd BufWritePre,BufRead *.html :normal gg=G
+":autocmd BufWritePre,BufRead *.html :normal G=gg
 
 " Set differents commenting depending on the language
 :autocmd FileType c iabbrev /* /**/<left><left>
@@ -222,3 +222,34 @@ if has('nvim')
 	nnoremap <localleader>t :call Term_toggle(10)<cr>
 	tnoremap <localleader>t <C-\><C-n>:call Term_toggle(10)<cr>
 endif
+
+" Change in next parenthese
+onoremap in( :<c-u>normal! f(vi(<cr>
+" Change in previous parenthese
+onoremap il( :<c-u>normal! F)vi(<cr>
+" Change around next parenthese
+onoremap an( :<c-u>normal! f(va(<cr>
+" Change around previous parenthese
+onoremap al( :<c-u>normal! F)va(<cr>
+
+" Change in next square brackets
+onoremap in[ :<c-u>normal! f[vi[<cr>
+" Change in previous square brackets
+onoremap il[ :<c-u>normal! F]vi[<cr>
+" Change around next square brackets
+onoremap an[ :<c-u>normal! f[va[<cr>
+" Change around previous square brackets
+onoremap al[ :<c-u>normal! F]va[<cr>
+
+" Change in next curly brackets
+onoremap in{ :<c-u>normal! f{vi{<cr>
+" Change in previous curly brackets
+onoremap il{ :<c-u>normal! F}vi{<cr>
+" Change around next curly brackets
+onoremap an{ :<c-u>normal! f{va{<cr>
+" Change around previous curly brackets
+onoremap al{ :<c-u>normal! F}va{<cr>
+
+onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
+onoremap ah :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rg_vk0"<cr>
+
