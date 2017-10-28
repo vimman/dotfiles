@@ -39044,9 +39044,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>426 946 918 381 0 0 2560 1440 </string>
+	<string>330 793 918 452 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1281 80 1277 1337 0 0 2560 1417 </string>
+	<string>715 396 1130 704 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>343 157 1130 728 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -39281,8 +39281,10 @@
 				<key>Red Component</key>
 				<real>0.0029126130975782871</real>
 			</dict>
+			<key>Background Image Is Tiled</key>
+			<false/>
 			<key>Background Image Location</key>
-			<string></string>
+			<string>/Users/qdurot/dotfiles/iterm/wood_slats_colors_rainbow_55219_1920x1080.jpg</string>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -39296,6 +39298,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Blend</key>
+			<real>0.11594050480769232</real>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
@@ -39836,7 +39840,7 @@
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
