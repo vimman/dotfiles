@@ -81,8 +81,6 @@ function hs
 }
 alias hsi='hs -i'
 
-alias gcc="gcc -Wall -Werror -Wextra"
-
 # Vim is now neovim
 alias v="nvim"
 alias vin="nvim"

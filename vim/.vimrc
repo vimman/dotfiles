@@ -112,7 +112,7 @@ nnoremap <leader>l :Lex<cr>
 "------------------------------ AIRLINE --------------------------------------
 
 " If you have powerline fonts installed
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 "themes choosing
 let g:airline_theme='bubblegum'
 
