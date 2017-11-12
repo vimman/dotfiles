@@ -39289,8 +39289,10 @@
 				<key>Red Component</key>
 				<real>0.0029126130975782871</real>
 			</dict>
+			<key>Background Image Is Tiled</key>
+			<false/>
 			<key>Background Image Location</key>
-			<string>/Users/studio/dotfiles/iterm/black_carrelage.jpeg</string>
+			<string>~/dotfiles/iterm/black_carrelage.jpeg</string>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
