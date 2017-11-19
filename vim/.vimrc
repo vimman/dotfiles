@@ -15,6 +15,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } "FZF !
 Plug 'tpope/vim-fugitive'				" git plugin
 Plug 'junegunn/goyo.vim'				" Distraction free plugin
 "Plug 'gilligan/vim-lldb'				" lldb
+Plug 'sheerun/vim-polyglot'				" Better syntax
 
 if has('nvim')
 	Plug 'critiqjo/lldb.nvim'			" lldb integration needs python-client
@@ -71,20 +72,20 @@ set noerrorbells	" Empeche vim de beeper
 set hidden
 
 " Desactive les touches directionnelles
-"noremap <up> <nop>
-"noremap <down> <nop>
-"noremap <left> <nop>
-"noremap <right> <nop>
-"inoremap <up> <nop>
-"inoremap <down> <nop>
-"inoremap <left> <nop>
-"inoremap <right> <nop>
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 
 "------------------------------- FUNCTIONS -----------------------------------
 
 " Raccourci pour passer la numérotation en mode relative "
-nnoremap <C-m> :set relativenumber!<cr>
-nnoremap <C-n> :set number!<cr>
+nnoremap <leader>N :set relativenumber!<cr>
+nnoremap <leader>n :set number!<cr>
 
 " Raccourci clavier pour pouvoir coller du code sans problemes
 "nnoremap <C-l> :set paste! <cr>
@@ -111,7 +112,7 @@ nnoremap <leader>l :Lex<cr>
 "------------------------------ AIRLINE --------------------------------------
 
 " If you have powerline fonts installed
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 "themes choosing
 let g:airline_theme='bubblegum'
 
@@ -184,7 +185,7 @@ autocmd VimEnter * echo "'O.O' Ah que coucou !"
 :autocmd BufWrite,BufRead *.hml :setlocal nowrap
 
 " Autoindent html files when write/read it
-:autocmd BufWritePre,BufRead *.html :normal gg=G
+":autocmd BufWritePre,BufRead *.html :normal G=gg
 
 " Set differents commenting depending on the language
 :autocmd FileType c iabbrev /* /**/<left><left>
@@ -222,3 +223,34 @@ if has('nvim')
 	nnoremap <localleader>t :call Term_toggle(10)<cr>
 	tnoremap <localleader>t <C-\><C-n>:call Term_toggle(10)<cr>
 endif
+
+" Change in next parenthese
+onoremap in( :<c-u>normal! f(vi(<cr>
+" Change in previous parenthese
+onoremap il( :<c-u>normal! F)vi(<cr>
+" Change around next parenthese
+onoremap an( :<c-u>normal! f(va(<cr>
+" Change around previous parenthese
+onoremap al( :<c-u>normal! F)va(<cr>
+
+" Change in next square brackets
+onoremap in[ :<c-u>normal! f[vi[<cr>
+" Change in previous square brackets
+onoremap il[ :<c-u>normal! F]vi[<cr>
+" Change around next square brackets
+onoremap an[ :<c-u>normal! f[va[<cr>
+" Change around previous square brackets
+onoremap al[ :<c-u>normal! F]va[<cr>
+
+" Change in next curly brackets
+onoremap in{ :<c-u>normal! f{vi{<cr>
+" Change in previous curly brackets
+onoremap il{ :<c-u>normal! F}vi{<cr>
+" Change around next curly brackets
+onoremap an{ :<c-u>normal! f{va{<cr>
+" Change around previous curly brackets
+onoremap al{ :<c-u>normal! F}va{<cr>
+
+onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
+onoremap ah :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rg_vk0"<cr>
+
