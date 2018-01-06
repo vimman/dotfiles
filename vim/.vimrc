@@ -7,8 +7,6 @@ call plug#begin()
 
 Plug 'vim-syntastic/syntastic'			" Avoid simple mistakes of syntax
 Plug 'tpope/vim-surround'				" Plugin to help surrounding (){}[]...
-Plug 'bling/vim-airline'				" Bottom line styling plugin
-Plug 'vim-airline/vim-airline-themes'	" Themes for vim-airline
 Plug 'chrisbra/Recover.vim'				" recover .swp files
 Plug 'ekalinin/Dockerfile.vim'			" syntax for Dockerfiles
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } "FZF !
@@ -18,7 +16,7 @@ Plug 'junegunn/goyo.vim'				" Distraction free plugin
 Plug 'sheerun/vim-polyglot'				" Better syntax
 Plug 'flazz/vim-colorschemes'			" Colorshchemes collection
 Plug 'felixhummel/setcolors.vim'		" Colorshchemes tester
-
+Plug 'itchyny/lightline.vim'			" Airline manager
 
 if has('nvim')
 	Plug 'critiqjo/lldb.nvim'			" lldb integration needs python-client
@@ -52,6 +50,7 @@ set cc=80			" Change la couleur de fond a 80 colonnes
 set showcmd			" Affiche les commandes incompletes
 					" Set list set nolist nice caracteres
 set wildmenu		" Show autocompletion possibles
+"set noshowmode		" Dont show -- INSERT --, -- VISUAL -- whene changing mode
 
 set listchars=space:.,tab:▸\ ,eol:¬
 set cursorline
@@ -112,18 +111,11 @@ let g:netrw_preview=1
 
 nnoremap <leader>l :Lex<cr>
 
-"------------------------------ AIRLINE --------------------------------------
+"-------------------------------- AIRLINE -------------------------------------
 
-" If you have powerline fonts installed
-let g:airline_powerline_fonts = 0
-"themes choosing
-let g:airline_theme='bubblegum'
-
-" Enable the list of buffers
-"let g:airline#extensions#tabline#enabled = 1
-
-" Show just the filename
-"let g:airline#extensions#tabline#fnamemod = ':t'
+let g:lightline = {
+			\ 'colorscheme': 'Dracula',
+			\ }
 
 "--------------------------------- GOYO ---------------------------------------
 
@@ -133,7 +125,7 @@ let g:airline_theme='bubblegum'
 let g:goyo_width=160
 let g:goyo_height="80%"
 
-"--------------------------------- NEOVIM -------------------------------------
+"-------------------------------- NEOVIM --------------------------------------
 
 " Use escape to get out insert-mode in terminal
 if has('nvim')
@@ -256,3 +248,8 @@ onoremap al{ :<c-u>normal! F}va{<cr>
 
 onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
 onoremap ah :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rg_vk0"<cr>
+
+"---------------------------------- 42 ----------------------------------------
+
+" Set formatted comment
+set comments=sr:/*,mb:**,ex:*/
