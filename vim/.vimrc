@@ -16,6 +16,9 @@ Plug 'tpope/vim-fugitive'				" git plugin
 Plug 'junegunn/goyo.vim'				" Distraction free plugin
 "Plug 'gilligan/vim-lldb'				" lldb
 Plug 'sheerun/vim-polyglot'				" Better syntax
+Plug 'flazz/vim-colorschemes'			" Colorshchemes collection
+Plug 'felixhummel/setcolors.vim'		" Colorshchemes tester
+
 
 if has('nvim')
 	Plug 'critiqjo/lldb.nvim'			" lldb integration needs python-client
@@ -54,8 +57,8 @@ set listchars=space:.,tab:▸\ ,eol:¬
 set cursorline
 "set cursorcolumn
 
-" Set my personal scheme
-colorscheme kantum
+" Set my colorscheme
+colorscheme onedark
 
 "-------------------------------- RECHERCHE ----------------------------------
 
@@ -253,4 +256,3 @@ onoremap al{ :<c-u>normal! F}va{<cr>
 
 onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
 onoremap ah :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rg_vk0"<cr>
-
