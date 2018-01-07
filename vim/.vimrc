@@ -50,7 +50,7 @@ set cc=80			" Change la couleur de fond a 80 colonnes
 set showcmd			" Affiche les commandes incompletes
 					" Set list set nolist nice caracteres
 set wildmenu		" Show autocompletion possibles
-"set noshowmode		" Dont show -- INSERT --, -- VISUAL -- whene changing mode
+set noshowmode		" Dont show -- INSERT --, -- VISUAL -- whene changing mode
 
 set listchars=space:.,tab:▸\ ,eol:¬
 set cursorline
