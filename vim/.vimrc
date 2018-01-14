@@ -29,6 +29,7 @@ filetype plugin indent on    " required
 
 " Use space as <mapleader> key
 :let mapleader = " "
+nnoremap <space> <nop>
 
 "-------------------------------- AFFICHAGE ----------------------------------
 
@@ -43,7 +44,7 @@ set scrolloff=5		" Affiche un minimum de 5 lignes autour du curseur
 set shiftwidth=4	" Regle les tabulations automatiques sur 4 espaces
 set tabstop=4		" Regle l'affichage des tabulations sur 4 espaces
 set background=dark	" Utilise des couleurs adaptees pour fond noir
-set splitright		" Ouvre les verticalsplit sur la droite
+"set splitright		" Ouvre les verticalsplit sur la droite
 
 set laststatus=2	" Affiche la bar de status
 set cc=80			" Change la couleur de fond a 80 colonnes
@@ -151,8 +152,6 @@ endif
 "--------------------------------- TABS ---------------------------------------
 
 " Use <alt-j> and <alt-k> to change tab
-:inoremap <C-j> gT
-:inoremap <C-k> gt
 :nnoremap <C-j> gT
 :nnoremap <C-k> gt
 
