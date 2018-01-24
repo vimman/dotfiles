@@ -18,6 +18,18 @@ Plug 'flazz/vim-colorschemes'			" Colorshchemes collection
 Plug 'felixhummel/setcolors.vim'		" Colorshchemes tester
 Plug 'itchyny/lightline.vim'			" Airline manager
 Plug 'brookhong/cscope.vim'				" Cscope plugin
+Plug 'pandark/42header.vim'				" 42 Header pk style
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
 
 if has('nvim')
 	Plug 'critiqjo/lldb.nvim'			" lldb integration needs python-client
@@ -120,6 +132,14 @@ function! Tabe(...)
 	if i
 		exe "tabn " . (t + 1)
 	endif
+endfunction
+
+" Macro in visual range
+xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
+
+function! ExecuteMacroOverVisualRange()
+  echo "@".getcmdline()
+  execute ":'<,'>normal @".nr2char(getchar())
 endfunction
 
 "-------------------------------- NETRW --------------------------------------
@@ -293,3 +313,4 @@ nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
 
 " Set formatted comment
 set comments=sr:/*,mb:**,ex:*/
+nmap <f1> :FortyTwoHeader<CR>
