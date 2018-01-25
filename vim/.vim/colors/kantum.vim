@@ -42,3 +42,7 @@ hi TabLinefill cterm=NONE
 " Set transparent airline
 hi StatusLine cterm=NONE
 hi StatusLineNC ctermbg=NONE
+
+" Set gui basic
+hi Normal guibg=#323237
+hi Normal guifg=white
