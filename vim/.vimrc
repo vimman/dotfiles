@@ -256,6 +256,25 @@ onoremap an[ :<c-u>normal! f[va[<cr>
 " Change around previous square brackets
 onoremap al[ :<c-u>normal! F]va[<cr>
 
+" Change in next simple quote
+onoremap in" :<c-u>normal! f'vi'<cr>
+" Change in previous simple quote
+onoremap il" :<c-u>normal! F'vi'<cr>
+" Change around next simple quote
+onoremap an" :<c-u>normal! f'va'<cr>
+" Change around previous simple quote
+onoremap al" :<c-u>normal! F'va'<cr>
+
+
+" Change in next double quote
+onoremap in" :<c-u>normal! f"vi"<cr>
+" Change in previous double quote
+onoremap il" :<c-u>normal! F"vi"<cr>
+" Change around next double quote
+onoremap an" :<c-u>normal! f"va"<cr>
+" Change around previous double quote
+onoremap al" :<c-u>normal! F"va"<cr>
+
 " Change in next curly brackets
 onoremap in{ :<c-u>normal! f{vi{<cr>
 " Change in previous curly brackets
