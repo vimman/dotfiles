@@ -17,6 +17,7 @@ Plug 'sheerun/vim-polyglot'				" Better syntax
 Plug 'flazz/vim-colorschemes'			" Colorshchemes collection
 Plug 'felixhummel/setcolors.vim'		" Colorshchemes tester
 Plug 'itchyny/lightline.vim'			" Airline manager
+Plug 'brookhong/cscope.vim'				" Cscope plugin
 Plug 'pandark/42header.vim'				" 42 Header pk style
 
 if has('nvim')
@@ -57,14 +58,13 @@ set shiftwidth=4	" Regle les tabulations automatiques sur 4 espaces
 set tabstop=4		" Regle l'affichage des tabulations sur 4 espaces
 set background=dark	" Utilise des couleurs adaptees pour fond noir
 "set splitright		" Ouvre les verticalsplit sur la droite
-
 set laststatus=2	" Affiche la bar de status
 set cc=80			" Change la couleur de fond a 80 colonnes
 set showcmd			" Affiche les commandes incompletes
-					" Set list set nolist nice caracteres
 set wildmenu		" Show autocompletion possibles
 set noshowmode		" Dont show -- INSERT --, -- VISUAL -- whene changing mode
 
+" Set list set nolist nice caracteres
 set listchars=space:.,tab:▸\ ,eol:¬
 set cursorline
 "set cursorcolumn
@@ -83,10 +83,10 @@ set incsearch		" Surligne le resultat pendant la saisie
 set visualbell		" Empeche vim de beeper
 set noerrorbells	" Empeche vim de beeper
 
-" Cache les fichiers lors de l'ouverture d'un autre
+" Hide a buffer instead of showing error when opening a new file
 set hidden
 
-" Desactive les touches directionnelles
+" Deactivate arrowkeys
 noremap <up> <nop>
 noremap <down> <nop>
 noremap <left> <nop>
@@ -95,6 +95,10 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+" Deactivate backspace
+inoremap <backspace> <nop>
+cnoremap <backspace> <nop>
 
 "------------------------------- FUNCTIONS -----------------------------------
 
@@ -113,6 +117,22 @@ command! Mt !ctags -R .
 
 " Do not create swapfiles
 :set noswapfile
+
+" Open multiple tab from vim
+command! -complete=file -nargs=* Tabe call Tabe(<f-args>)
+function! Tabe(...)
+	let t = tabpagenr()
+	let i = 0
+	for f in a:000
+		for g in glob(f, 0, 1)
+			exe "tabe " . fnameescape(g)
+			let i = i + 1
+		endfor
+	endfor
+	if i
+		exe "tabn " . (t + 1)
+	endif
+endfunction
 
 " Macro in visual range
 xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
@@ -201,7 +221,7 @@ autocmd VimEnter * echo "'O.O' Ah que coucou !"
 " Autoindent html files when write/read it
 ":autocmd BufWritePre,BufRead *.html :normal G=gg
 
-" Set differents commenting depending on the language
+" Set differents comments depending on the language
 :autocmd FileType c iabbrev /* /**/<left><left>
 :autocmd FileType c nnoremap <buffer> <localleader>c I//<esc>
 :autocmd FileType vim nnoremap <buffer> <localleader>c I"<esc>
@@ -286,6 +306,27 @@ onoremap al{ :<c-u>normal! F}va{<cr>
 
 onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
 onoremap ah :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rg_vk0"<cr>
+
+"--------------------------------- Cscope -------------------------------------
+
+nnoremap <leader>fa :call CscopeFindInteractive(expand('<cword>'))<CR>
+nnoremap <leader>k :call ToggleLocationList()<CR>
+
+" s: Find this C symbol
+nnoremap  <leader>fs :call CscopeFind('s', expand('<cword>'))<CR>
+" g: Find this definition
+nnoremap  <leader>fg :call CscopeFind('g', expand('<cword>'))<CR>
+" d: Find functions called by this function
+nnoremap  <leader>fd :call CscopeFind('d', expand('<cword>'))<CR>
+" c: Find functions calling this function
+nnoremap  <leader>fc :call CscopeFind('c', expand('<cword>'))<CR>
+" t: Find this text string
+nnoremap  <leader>ft :call CscopeFind('t', expand('<cword>'))<CR>
+" e: Find this egrep pattern
+nnoremap  <leader>fe :call CscopeFind('e', expand('<cword>'))<CR>
+" f: Find this file
+nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
+" i: Find files #including this file
 
 "---------------------------------- 42 ----------------------------------------
 
