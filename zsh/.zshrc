@@ -187,6 +187,12 @@ mantoepub()
 		ebook-convert $1.pdf $1.epub > /dev/null 2>&1 && rm $1.pdf
 }
 
+# Erase git credential on osx keychain blabla
+
+host=github.com
+protocol=https
+echo | git credential-osxkeychain erase
+
 # Way to make termite work on server
 #export TERM=screen-256color
 
