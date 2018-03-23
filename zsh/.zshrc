@@ -84,8 +84,8 @@ alias hsi='hs -i'
 # Vim is now neovim
 alias v="nvim"
 alias vin="nvim"
-alias vi="nvim"
 alias vim="nvim"
+alias vi="/usr/bin/vim"
 
 # Vim is everywhere
 alias :q="exit"
@@ -187,14 +187,8 @@ mantoepub()
 		ebook-convert $1.pdf $1.epub > /dev/null 2>&1 && rm $1.pdf
 }
 
-# Way to make termite work on server
-#export TERM=screen-256color
-
-if [[ `uname -a` == *vps416438.ovh.net*  && $TMUX = "" ]]
-then
-	export TERM=screen-256color
-	tmux a
-fi
-
 # Makes ranger to open files with neovim
 export EDITOR='nvim'
+
+# Try to connect to a tmux session if there is one
+tmux a 2>/dev/null

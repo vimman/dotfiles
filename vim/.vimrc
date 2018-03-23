@@ -20,16 +20,11 @@ Plug 'itchyny/lightline.vim'			" Airline manager
 Plug 'brookhong/cscope.vim'				" Cscope plugin
 Plug 'pandark/42header.vim'				" 42 Header pk style
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
-" Use deoplete.
-let g:deoplete#enable_at_startup = 1
+"if has('nvim')
+"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"  " Use deoplete.
+"  let g:deoplete#enable_at_startup = 1
+"endif
 
 if has('nvim')
 	Plug 'critiqjo/lldb.nvim'			" lldb integration needs python-client
@@ -71,7 +66,7 @@ set cursorline
 
 " Set my colorscheme
 colorscheme onedark
-
+hi Normal guibg=NONE ctermbg=NONE
 "-------------------------------- RECHERCHE ----------------------------------
 
 set ignorecase		" Ignore la casse lors d'une recherche
