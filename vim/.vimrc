@@ -22,13 +22,18 @@ Plug 'pandark/42header.vim'				" 42 Header pk style
 
 "if has('nvim')
 "  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"  " Use deoplete.
-"  let g:deoplete#enable_at_startup = 1
+"else
+"  Plug 'Shougo/deoplete.nvim'
+"  Plug 'roxma/nvim-yarp'
+"  Plug 'roxma/vim-hug-neovim-rpc'
 "endif
-
-if has('nvim')
-	Plug 'critiqjo/lldb.nvim'			" lldb integration needs python-client
-endif
+"
+"" Use deoplete.
+"let g:deoplete#enable_at_startup = 1
+"
+"if has('nvim')
+"	Plug 'critiqjo/lldb.nvim'			" lldb integration needs python-client
+"endif
 
 " Initialize plugin system
 call plug#end()
@@ -109,6 +114,9 @@ nnoremap <leader>n :set number!<cr>
 
 " Shortcut to recursivly make tags
 command! Mt !ctags -R .
+
+" Remove all .DS_Store under the current directory
+command! Dstore !rm $(find . -name ".DS_Store" 2>/dev/null)
 
 " Do not create swapfiles
 :set noswapfile
