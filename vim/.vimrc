@@ -1,4 +1,4 @@
-"------------------------- Vimrc file from Siphillis -------------------------
+"------------------------- Vimrc file from Vimman ----------------------------
 
 "------------------------------ Fevrier 2017 ---------------------------------
 
@@ -12,28 +12,15 @@ Plug 'ekalinin/Dockerfile.vim'			" syntax for Dockerfiles
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } "FZF !
 Plug 'tpope/vim-fugitive'				" git plugin
 Plug 'junegunn/goyo.vim'				" Distraction free plugin
-"Plug 'gilligan/vim-lldb'				" lldb
 Plug 'sheerun/vim-polyglot'				" Better syntax
 Plug 'flazz/vim-colorschemes'			" Colorshchemes collection
 Plug 'felixhummel/setcolors.vim'		" Colorshchemes tester
 Plug 'itchyny/lightline.vim'			" Airline manager
 Plug 'brookhong/cscope.vim'				" Cscope plugin
 Plug 'pandark/42header.vim'				" 42 Header pk style
+Plug 'ap/vim-css-color'					" Css colors show in code
 
-"if has('nvim')
-"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-"  Plug 'Shougo/deoplete.nvim'
-"  Plug 'roxma/nvim-yarp'
-"  Plug 'roxma/vim-hug-neovim-rpc'
-"endif
-"
-"" Use deoplete.
-"let g:deoplete#enable_at_startup = 1
-"
-"if has('nvim')
-"	Plug 'critiqjo/lldb.nvim'			" lldb integration needs python-client
-"endif
+"Plug 'blindFS/vim-translator', { 'mappings' : '<Plug>Translate' }	" translator
 
 " Initialize plugin system
 call plug#end()
@@ -66,12 +53,14 @@ set noshowmode		" Dont show -- INSERT --, -- VISUAL -- whene changing mode
 
 " Set list set nolist nice caracteres
 set listchars=space:.,tab:▸\ ,eol:¬
-set cursorline
+"set cursorline
 "set cursorcolumn
 
-" Set my colorscheme
+" Set colorscheme
 colorscheme onedark
+" Make it transparent
 hi Normal guibg=NONE ctermbg=NONE
+
 "-------------------------------- RECHERCHE ----------------------------------
 
 set ignorecase		" Ignore la casse lors d'une recherche
@@ -80,25 +69,24 @@ set incsearch		" Surligne le resultat pendant la saisie
 
 "---------------------------------- Beep -------------------------------------
 
-set visualbell		" Empeche vim de beeper
-set noerrorbells	" Empeche vim de beeper
+set vb t_vb=		" Empeche vim de beeper
 
 " Hide a buffer instead of showing error when opening a new file
 set hidden
 
 " Deactivate arrowkeys
-noremap <up> <nop>
-noremap <down> <nop>
-noremap <left> <nop>
-noremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+"noremap <up> <nop>
+"noremap <down> <nop>
+"noremap <left> <nop>
+"noremap <right> <nop>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
 
 " Deactivate backspace
-inoremap <backspace> <nop>
-cnoremap <backspace> <nop>
+"inoremap <backspace> <nop>
+"cnoremap <backspace> <nop>
 
 "------------------------------- FUNCTIONS -----------------------------------
 
@@ -255,7 +243,6 @@ function! Term_toggle(height)
     endif
 endfunction
 
-
 if has('nvim')
 	nnoremap <localleader>t :call Term_toggle(10)<cr>
 	tnoremap <localleader>t <C-\><C-n>:call Term_toggle(10)<cr>
@@ -336,3 +323,8 @@ nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
 " Set formatted comment
 set comments=sr:/*,mb:**,ex:*/
 nmap <f1> :FortyTwoHeader<CR>
+
+"--------------------------------- Translate -----------------------------------
+vmap T <Plug>Translate
+vmap R <Plug>TranslateReplace
+vmap P <Plug>TranslateSpeak
