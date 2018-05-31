@@ -161,10 +161,10 @@ bar {
 #==============================================================================
 
 # Lockscreen set
-bindsym $mod+Shift+x exec i3lock -t -i ~/Images/Wallpaper/04.png
+bindsym $mod+Shift+x exec i3lock -t -i $HOME/Pictures/lock.png
 
 # Vimman keys
-exec xmodmap /home/bart/.xmodmap
+exec xmodmap /home/bart/.Xmodmap
 
 # Pulseaudio controls
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 1%+ unmute
@@ -177,9 +177,12 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
+# Disable touchpad
 exec synclient TouchpadOff=1
 exec synclient RightButtonAreaLeft=0
 exec synclient RightButtonAreaTop=0
+# or
+exec xinput --disable 10
 
 # Be nice with your eyes
 exec redshift
@@ -188,10 +191,20 @@ exec redshift
 exec compton -b
 
 # Set background
-exec feh --bg-fill ~/Pictures/tex_wall7.jpg
+exec feh --bg-fill ~/Pictures/tex_wall1.jpg
 
 # Set keyboard be fast
 exec xset r rate 170 70
 
 #This is not working properly the transparence from compton breaks everything
 #exec --no-startup-id mplayer -rootwin -ao null -noconsolecontrols  -fs -cookies -cookies-file /tmp/cookie.txt $(youtube-dl -g --cookies /tmp/cookie.txt "http://www.youtube.com/watch?v=f7kp4w43hag")
+
+# no title bar
+for_window [class="^.*"] border pixel 1
+new_window 1pixel
+
+# Cerebro (spotlight like)
+exec yarn run dev
+
+# Automount
+exec udiskie
